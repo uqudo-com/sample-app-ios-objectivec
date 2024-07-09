@@ -1,0 +1,20 @@
+PODS:
+  - OpenSSL-Universal (1.1.1700)
+  - UqudoSDK (3.1.2)
+
+DEPENDENCIES:
+  - OpenSSL-Universal (= 1.1.1700)
+  - UqudoSDK (= 3.1.2)
+
+SPEC REPOS:
+  trunk:
+    - OpenSSL-Universal
+    - UqudoSDK
+
+SPEC CHECKSUMS:
+  OpenSSL-Universal: ee0a7a25f2042782e2df405e66db3e429198e392
+  UqudoSDK: e94aa6224b731da1e8d9275a3ebf3fb629ac4d4d
+
+PODFILE CHECKSUM: fa12056d68b85b596a578cef0c326b79a677b3c9
+
+COCOAPODS: 1.15.2

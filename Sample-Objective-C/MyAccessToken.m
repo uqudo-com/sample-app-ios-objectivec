@@ -4,6 +4,9 @@
 //
 //  Created by NooN on 18/9/23.
 //
+// Retrieve the authorization token using oauth2 client credentials grant type.
+// Note: Don’t perform this operation inside your mobile application but only from your backend
+// For detail, please check on document https://docs.uqudo.com/docs/uqudo-api/authorisation
 
 #import "MyAccessToken.h"
 
@@ -18,12 +21,7 @@
     if (self) {}
     return self;
 }
-/*
- Retrieve the authorization token using oauth2 client credentials grant type.
- Note: Don’t perform this operation inside your mobile application but only from your backend
- For detail, please check on document https://docs.uqudo.com/docs/uqudo-api/authorisation
- 
- */
+
 - (void)requestAccessTokenWithCompletion:(void (^)(NSString *accessToken, NSError *error))handler {
 
     // Create a URL for your request

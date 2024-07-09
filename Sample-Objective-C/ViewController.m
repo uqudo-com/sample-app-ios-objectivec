@@ -54,7 +54,8 @@
     scanConfig.disableHelpPage = NO;
     
     // You can choose to manually upload your document instead of having it automatically scanned. Simply upload a PDF of the document's image. If the document is two-sided, make sure the first picture is the front side and the second picture is the back side. Enabling this option will automatically disable the reading step.
-    scanConfig.enableUpload = NO;
+    // Upload functionality will be removed in a future release of the SDK
+    // scanConfig.enableUpload = NO;
 
     // Specifies the required match level for facial recognition of this document's scanned picture.
     scanConfig.faceMinimumMatchLevel = 3; // Valid number 1-5
@@ -78,7 +79,8 @@
     [readingConfig forceReading:NO];
     
     // Force the reading part only if NFC is supported. Users will not be able to skip if NFC is supported; otherwise, they will be moved to the next step after scanning.
-    [readingConfig forceReadingIfSupported:NO];
+    // This is a no-op operation and it is the default behavior from version 3.x
+    // [readingConfig forceReadingIfSupported:NO];
     
     // Set NFC timeout for document reading. If timeout exceeds, users can skip the NFC step. Only works if force reading is enabled.
     readingConfig.forceReadingTimeout = 30; // Defines the timeout in seconds
@@ -158,7 +160,8 @@
     config.allowClosedEyes = YES;
     
     // Enabling this option allows you to enroll your face for account recovery. For more information, refer to the Account Recovery Flow.
-    config.enrollFace = YES;
+    // This is used for the Account Recovery flow that has been deprecated since version 3.0.0.
+    // config.enrollFace = YES;
     
     // Defines the minimum match level that the facial recognition has to meet for scanned pictures
     config.scanMinimumMatchLevel = 3;
