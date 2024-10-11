@@ -6,7 +6,7 @@ target 'Sample-Objective-C' do
   use_frameworks!
 
   # Pods for Sample-Objective-C
-  pod 'UqudoSDK', '3.1.2'
+  pod 'UqudoSDK', '3.1.3'
   pod 'OpenSSL-Universal', '1.1.1700'
 
 
