@@ -28,7 +28,7 @@
     
     NSString *timeStamp = [self timeStamp:trace.timestamp];
     
-    NSLog(@"MyTrace(sessionId=%@, category=%@, event=%@, page=%@, status=%@, statusCode=%@, statusMessage=%@, documentType=%@, timestamp=%@)" , trace.sessionId, trace.category->name, trace.event->name, trace.page->name ,trace.status->name, trace.statusCode->name, trace.statusMessage, documentTypeName, timeStamp);
+//    NSLog(@"MyTrace(sessionId=%@, category=%@, event=%@, page=%@, status=%@, statusCode=%@, statusMessage=%@, documentType=%@, timestamp=%@)" , trace.sessionId, trace.category->name, trace.event->name, trace.page->name ,trace.status->name, trace.statusCode->name, trace.statusMessage, documentTypeName, timeStamp);
 }
 
 

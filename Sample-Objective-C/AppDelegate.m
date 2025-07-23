@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-
 #import <UqudoSDK/UQTrace.h>
 #import "MyAccessToken.h"
 
@@ -55,7 +54,6 @@
     self.myAccessToken = [[MyAccessToken alloc] init];
     [self.myAccessToken requestAccessTokenWithCompletion:^(NSString * _Nonnull accessToken, NSError * _Nonnull error) {
         self.accessToken = accessToken;
-        NSLog(@"accessToken: %@", accessToken);
     }];
 }
 
@@ -65,6 +63,12 @@
     // Config Tracer object for analytic porpose
     UQTracer *tracer = [[UQTracer alloc] init];
     self.uqudoBuilder = [[UQBuilderController alloc] initWithTracer:tracer];
+}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"AppleLanguages"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

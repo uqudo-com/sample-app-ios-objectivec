@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSString *nonce;
 
 @property (strong, nonatomic) IBOutlet UIButton *startButoon;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *appLanguageSegment;
 
 @end
 
@@ -29,6 +30,7 @@
 
 - (void)configUI {
     self.startButoon.layer.cornerRadius = 8;
+    self.appLanguageSegment.layer.cornerRadius = 8;
 }
 
 - (NSString *)createSessionID {
@@ -43,8 +45,21 @@
     [self performingEnrollment];
 }
 
-- (IBAction)TestButton:(UIButton *)sender {
-    NSLog(@"TestButton: %@",sender);
+- (IBAction)onSetAppLanguage:(UISegmentedControl *)sender {
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+        switch (sender.selectedSegmentIndex) {
+            case 1:
+                [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"ar", nil]forKey:@"AppleLanguages"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                break;
+
+                
+            default:
+                [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"en", nil]forKey:@"AppleLanguages"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                break;
+        }
+    });
 }
 
 - (UQScanConfig *)createScanConfig {

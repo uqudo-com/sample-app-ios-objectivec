@@ -52,7 +52,7 @@
             <key>uq_document_description_uae_visa</key>
             <string>UAE Visa</string>
             <key>uq_document_description_qat_id</key>
-            <string>Qatar ID</string>
+            <string>Qatari ID</string>
             <key>uq_document_description_nld_dl</key>
             <string>Netherlands Driving License</string>
             <key>uq_document_description_deu_id</key>
@@ -66,9 +66,9 @@
             <key>uq_document_description_gha_id</key>
             <string>Ghanaian ID</string>
             <key>uq_document_description_nga_dl</key>
-            <string>Nigerian Driving License</string>
+            <string>Driving License</string>
             <key>uq_document_description_nga_voter_id</key>
-            <string>Nigerian Voter ID</string>
+            <string>Voter ID</string>
             <key>uq_document_description_nga_nin</key>
             <string>Nigerian NIN</string>
             <key>uq_document_description_sau_dl</key>
@@ -120,13 +120,13 @@
             <key>uq_document_description_usa_dl</key>
             <string>USA Driving License</string>
             <key>uq_document_description_qat_dl</key>
-            <string>Qatar Driving License</string>
+            <string>Qatari Driving License</string>
             <key>uq_document_description_bhr_dl</key>
             <string>Bahrain Driving License</string>
             <key>uq_document_description_phl_dl</key>
             <string>Philippines Driving License</string>
             <key>uq_document_description_rsl_id</key>
-            <string>Somaliland National ID</string>
+            <string>Somaliland ID</string>
             <key>uq_document_description_ind_pan</key>
             <string>PAN card</string>
             <key>uq_document_description_sau_id_national</key>
@@ -139,6 +139,36 @@
             <string>Lebanese ID</string>
             <key>uq_document_description_lbn_dl</key>
             <string>Lebanese Driving License</string>
+            <key>uq_document_description_mrz</key>
+            <string>MRZ</string>
+            <key>uq_document_description_irq_id</key>
+            <string>Iraqi ID</string>
+            <key>uq_document_description_uae_id_digital</key>
+            <string>Digital Emirates ID</string>
+            <key>uq_document_description_qat_vl</key>
+            <string>Qatari Vehicle License</string>
+            <key>uq_document_description_uae_passport_digital</key>
+            <string>Digital Emirates Passport</string>
+            <key>uq_document_description_tun_id</key>
+            <string>Tunisian ID</string>
+            <key>uq_document_description_bhr_vl</key>
+            <string>Bahrain Vehicle License</string>
+            <key>uq_document_description_jor_vl</key>
+            <string>Jordanian Vehicle License</string>
+            <key>uq_document_description_sau_vl</key>
+            <string>Saudi Vehicle License</string>
+            <key>uq_document_description_som_id</key>
+            <string>Somali ID</string>
+            <key>uq_document_description_qat_id_national</key>
+            <string>Qatari ID for Citizens</string>
+            <key>uq_document_description_qat_id_resident</key>
+            <string>Qatari ID for Residents</string>
+            <key>uq_document_description_kwt_id_national</key>
+            <string>Kuwait ID for Citizens</string>
+            <key>uq_document_description_kwt_id_resident</key>
+            <string>Kuwait ID for Residents</string>
+            <key>uq_document_description_mar_id</key>
+            <string>Moroccan ID</string>
         </dict>
         <key>uq_button_title_text</key>
         <dict>
@@ -242,12 +272,6 @@
             <string>Attention</string>
             <key>uq_error_reading_chip_validation_failed</key>
             <string>Chip validation failed</string>
-            <key>uq_read_chip_validation_failed_message</key>
-            <string>Seems that the chip of your document is not valid, therefore we are not going to read the data inside the chip. Despite the chip validation failure, this step is optional, you can either skip it or cancel the enrollment process.</string>
-            <key>uq_error_read_document_invalid</key>
-            <string>Invalid document</string>
-            <key>uq_read_document_invalid_message</key>
-            <string>Seems that your document is not valid, therefore we are not going to read the data inside the chip. Despite the invalid document, this step is optional, you can either skip it or cancel the enrollment process.</string>
             <key>uq_server_error_read_document_validation_failed</key>
             <string>Your document is not valid</string>
             <key>uq_error_camera_permission_denied</key>
@@ -285,7 +309,7 @@
             <key>uq_scan_feedback_id</key>
             <string>Please hold %@ on the front of camera</string>
             <key>uq_scan_glare_detected</key>
-            <string>Glare detected, change lighting conditions</string>
+            <string>Avoid light reflections on the document</string>
             <key>uq_scan_message</key>
             <string>Fit %@ side to the frame</string>
             <key>uq_scan_message_single_side</key>
@@ -313,13 +337,25 @@
             <key>uq_scan_continue</key>
             <string>Continue</string>
             <key>uq_scan_face_detection_issue</key>
-            <string>Make sure the ID photo in the document is clear</string>
+            <string>Photo not clear. Please move to better lighting</string>
             <key>uq_scan_wrong_document</key>
             <string>Please provide the %@1 side of the %@2</string>
             <key>uq_scan_blur_image_detected</key>
-            <string>Blurry image detected, stay still during scanning</string>
+            <string>Unclear image. Don't move during the scan and ensure good lighting</string>
             <key>uq_scan_dark_image_detected</key>
-            <string>Dark image detected, please change lighting conditions</string>
+            <string>Low light conditions detected, please ensure good lighting while scanning</string>
+            <key>uq_scan_message_mrz</key>
+            <string>Fit the document side that contains the MRZ (Machine Readable Zone) to the frame</string>
+            <key>uq_scan_wrong_mrz</key>
+            <string>Please provide the document side that contains the MRZ (Machine Readable Zone)</string>
+            <key>uq_scan_document_move_closer</key>
+            <string>Please move the camera closer to the document</string>
+            <key>uq_scan_source_detection_failed</key>
+            <string>Please provide the original document. No screen and printed copies allowed</string>
+            <key>uq_scan_id_photo_tampering_detected</key>
+            <string>An alteration of the ID photo has been detected. Tampering with the ID photo is strictly prohibited</string>
+            <key>uq_scan_finger_detected</key>
+            <string>Please do not cover the document with your fingers</string>
         </dict>
         <key>uq_scanner_module_upload_text</key>
         <dict>
@@ -491,6 +527,26 @@
             <string>That was too short!\nHold the phone near ID for longer</string>
             <key>uq_read_sau_id_info_hold_phone</key>
             <string>Hold the phone near ID</string>
+            <key>uq_read_irq_id_error_data_mismatch</key>
+            <string>Authentication error</string>
+            <key>uq_read_irq_id_reading</key>
+            <string>Don’t move document!</string>
+            <key>uq_read_irq_id_reading_completed</key>
+            <string>Scanning Completed</string>
+            <key>uq_read_irq_id_reading_failed</key>
+            <string>That was too short!\nHold the phone near ID for longer</string>
+            <key>uq_read_irq_id_info_hold_phone</key>
+            <string>Hold the phone near ID</string>
+            <key>uq_read_mar_id_error_data_mismatch</key>
+            <string>Authentication error</string>
+            <key>uq_read_mar_id_reading</key>
+            <string>Don’t move document!</string>
+            <key>uq_read_mar_id_reading_completed</key>
+            <string>Scanning Completed</string>
+            <key>uq_read_mar_id_reading_failed</key>
+            <string>That was too short!\nHold the phone near ID for longer</string>
+            <key>uq_read_mar_id_info_hold_phone</key>
+            <string>Hold the phone near ID</string>
         </dict>
         <key>uq_face_recognition_module_text</key>
         <dict>
@@ -546,6 +602,10 @@
             <string>Remove anything that can cover your eyes, e.g. sun glasses</string>
             <key>uq_face_facial_recognition_no_look</key>
             <string>Look straight to the camera</string>
+            <key>uq_face_facial_recognition_face_tilt_left</key>
+            <string>Tilt your face left</string>
+            <key>uq_face_facial_recognition_face_tilt_right</key>
+            <string>Tilt your face right</string>
         </dict>
         <key>uq_background_check_module_text</key>
         <dict>
@@ -646,10 +706,18 @@
             <string>Enter your last name</string>
             <key>uq_lookup_nga_voter_id_feedback_text_last_name</key>
             <string>Please enter your last name</string>
-            <key>uq_lookup_nga_nin_placeholder_text_virtual_nin</key>
-            <string>Enter your virtual NIN</string>
-            <key>uq_lookup_nga_nin_feedback_text_virtual_nin</key>
-            <string>Please enter your virtual NIN</string>
+            <key>uq_lookup_nga_nin_placeholder_text_nin</key>
+            <string>Enter your NIN</string>
+            <key>uq_lookup_nga_nin_feedback_text_nin</key>
+            <string>Please enter your 11 numbers NIN</string>
+            <key>uq_lookup_nga_nin_placeholder_text_first_name</key>
+            <string>Enter your first name</string>
+            <key>uq_lookup_nga_nin_feedback_text_first_name</key>
+            <string>Please enter your first name</string>
+            <key>uq_lookup_nga_nin_placeholder_text_last_name</key>
+            <string>Enter your last name</string>
+            <key>uq_lookup_nga_nin_feedback_text_last_name</key>
+            <string>Please enter your last name</string>
             <key>uq_lookup_nga_dl_placeholder_text_license_number</key>
             <string>Enter your license number</string>
             <key>uq_lookup_nga_dl_feedback_text_license_number</key>
@@ -662,6 +730,10 @@
             <string>Enter your BVN number</string>
             <key>uq_lookup_nga_bvn_feedback_text_bvn</key>
             <string>Please enter your BVN number</string>
+            <key>uq_lookup_nga_bvn_placeholder_text_first_name</key>
+            <string>Enter your first name</string>
+            <key>uq_lookup_nga_bvn_feedback_text_first_name</key>
+            <string>Please enter your first name</string>
             <key>uq_lookup_nga_bvn_placeholder_text_last_name</key>
             <string>Enter your last name</string>
             <key>uq_lookup_nga_bvn_feedback_text_last_name</key>

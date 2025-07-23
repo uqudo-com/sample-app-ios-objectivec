@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HiA-GP-94l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HiA-GP-94l">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uqudo SDK integration example for Passport onboarding" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1Z-ek-eAH">
-                                <rect key="frame" x="20" y="100" width="374" height="60"/>
+                                <rect key="frame" x="20" y="144" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="b6w-dN-1dr"/>
                                 </constraints>
@@ -26,10 +26,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-04-8Tb">
-                                <rect key="frame" x="107" y="750" width="200" height="40"/>
+                                <rect key="frame" x="107" y="716" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="jXT-5o-igg"/>
+                                    <constraint firstAttribute="height" constant="40" id="6wr-Yk-eEQ"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start Onbarding">
@@ -39,27 +39,50 @@
                                     <action selector="onStartEnrollemnt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXq-jG-5WS"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5m1-7g-AV7">
+                                <rect key="frame" x="176" y="420" width="218" height="32"/>
+                                <segments>
+                                    <segment title="Engilsh"/>
+                                    <segment title="Arabic"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="onSetAppLanguage:" destination="BYZ-38-t0r" eventType="valueChanged" id="d61-Lz-Z1N"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgn-GP-D8E">
+                                <rect key="frame" x="20" y="425" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="d9w-04-8Tb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="7N3-9I-REI"/>
-                            <constraint firstItem="d9w-04-8Tb" firstAttribute="centerX" secondItem="o1Z-ek-eAH" secondAttribute="centerX" id="R4j-NS-dS6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d9w-04-8Tb" secondAttribute="bottom" constant="72" id="Umw-kK-SHY"/>
+                            <constraint firstItem="d9w-04-8Tb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="0QQ-lC-Bdf"/>
+                            <constraint firstItem="Hgn-GP-D8E" firstAttribute="leading" secondItem="o1Z-ek-eAH" secondAttribute="leading" id="1bM-1h-hnw"/>
+                            <constraint firstItem="d9w-04-8Tb" firstAttribute="centerX" secondItem="o1Z-ek-eAH" secondAttribute="centerX" id="DSb-6g-Zzv"/>
+                            <constraint firstItem="5m1-7g-AV7" firstAttribute="centerY" secondItem="Hgn-GP-D8E" secondAttribute="centerY" id="MlT-hT-62K"/>
                             <constraint firstItem="o1Z-ek-eAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zm9-Tp-dQe"/>
                             <constraint firstItem="o1Z-ek-eAH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="crm-kz-sZV"/>
                             <constraint firstItem="o1Z-ek-eAH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="dJk-6s-QOF"/>
+                            <constraint firstItem="5m1-7g-AV7" firstAttribute="trailing" secondItem="o1Z-ek-eAH" secondAttribute="trailing" id="geL-8C-PpR"/>
+                            <constraint firstItem="5m1-7g-AV7" firstAttribute="leading" secondItem="Hgn-GP-D8E" secondAttribute="trailing" constant="50" id="l9v-7S-PQ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d9w-04-8Tb" secondAttribute="bottom" constant="72" id="mb9-BX-je5"/>
+                            <constraint firstItem="Hgn-GP-D8E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="425" id="w9c-lU-qRs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uW8-tY-Vku"/>
                     <connections>
+                        <outlet property="appLanguageSegment" destination="5m1-7g-AV7" id="ma7-ws-1bD"/>
                         <outlet property="startButoon" destination="d9w-04-8Tb" id="nYE-jv-kM4"/>
                         <segue destination="LaC-dp-0JC" kind="show" identifier="enrollmentComplete" id="rg7-hg-3Ch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1055.072463768116" y="-28.125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qZi-Uc-CvJ">
@@ -70,13 +93,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2h-AE-IKv">
-                                <rect key="frame" x="20" y="280" width="374" height="60"/>
+                                <rect key="frame" x="20" y="324" width="374" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Passport document has been onboarded." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaL-cB-Dml">
-                                <rect key="frame" x="20" y="400" width="374" height="150"/>
+                                <rect key="frame" x="20" y="434" width="374" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -107,7 +130,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HiA-GP-94l" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="08h-ud-T5g">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

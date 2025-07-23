@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E0A2DA496910762F69927D6 /* Pods_Sample_Objective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBC81EF98DA52D504220B25 /* Pods_Sample_Objective_C.framework */; };
+		72CD4B902E2F78C10078472D /* uq-text-ar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72CD4B8F2E2F78C10078472D /* uq-text-ar.plist */; };
+		72CD4B932E2F78D90078472D /* uq-text.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72CD4B922E2F78D90078472D /* uq-text.plist */; };
 		72D2F3062AAF506B006BF849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2F3052AAF506B006BF849 /* AppDelegate.m */; };
 		72D2F3092AAF506B006BF849 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2F3082AAF506B006BF849 /* SceneDelegate.m */; };
 		72D2F30C2AAF506B006BF849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2F30B2AAF506B006BF849 /* ViewController.m */; };
@@ -23,12 +25,13 @@
 		72D34B9A2AB7D00F007D1F66 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72D34B902AB7D00F007D1F66 /* Poppins-SemiBold.ttf */; };
 		72D34B9E2AB7D029007D1F66 /* uq-styles-dark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D34B9B2AB7D028007D1F66 /* uq-styles-dark.plist */; };
 		72D34B9F2AB7D029007D1F66 /* uq-styles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D34B9C2AB7D028007D1F66 /* uq-styles.plist */; };
-		72D34BA02AB7D029007D1F66 /* uq-text.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D34B9D2AB7D029007D1F66 /* uq-text.plist */; };
 		72D34BA32AB7D65B007D1F66 /* MyTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D34BA22AB7D65B007D1F66 /* MyTracer.m */; };
 		72D34BA62AB7D7B6007D1F66 /* MyAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D34BA52AB7D7B6007D1F66 /* MyAccessToken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72CD4B8F2E2F78C10078472D /* uq-text-ar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uq-text-ar.plist"; sourceTree = "<group>"; };
+		72CD4B922E2F78D90078472D /* uq-text.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uq-text.plist"; sourceTree = "<group>"; };
 		72D2F3012AAF506B006BF849 /* Sample-Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D2F3042AAF506B006BF849 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72D2F3052AAF506B006BF849 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		72D34B902AB7D00F007D1F66 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		72D34B9B2AB7D028007D1F66 /* uq-styles-dark.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-styles-dark.plist"; sourceTree = "<group>"; };
 		72D34B9C2AB7D028007D1F66 /* uq-styles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-styles.plist"; sourceTree = "<group>"; };
-		72D34B9D2AB7D029007D1F66 /* uq-text.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-text.plist"; sourceTree = "<group>"; };
 		72D34BA12AB7D3D5007D1F66 /* Sample-Objective-C.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-Objective-C.entitlements"; sourceTree = "<group>"; };
 		72D34BA22AB7D65B007D1F66 /* MyTracer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTracer.m; sourceTree = "<group>"; };
 		72D34BA42AB7D7B6007D1F66 /* MyAccessToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccessToken.h; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 				72D2F3162AAF506E006BF849 /* main.m */,
 				72D34B9B2AB7D028007D1F66 /* uq-styles-dark.plist */,
 				72D34B9C2AB7D028007D1F66 /* uq-styles.plist */,
-				72D34B9D2AB7D029007D1F66 /* uq-text.plist */,
+				72CD4B922E2F78D90078472D /* uq-text.plist */,
+				72CD4B8F2E2F78C10078472D /* uq-text-ar.plist */,
 				72D34B862AB7D00F007D1F66 /* fonts */,
 			);
 			path = "Sample-Objective-C";
@@ -204,8 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CD4B902E2F78C10078472D /* uq-text-ar.plist in Resources */,
 				72D2F3142AAF506E006BF849 /* LaunchScreen.storyboard in Resources */,
 				72D34B972AB7D00F007D1F66 /* Poppins-LightItalic.ttf in Resources */,
+				72CD4B932E2F78D90078472D /* uq-text.plist in Resources */,
 				72D34B922AB7D00F007D1F66 /* Poppins-Light.ttf in Resources */,
 				72D34B9A2AB7D00F007D1F66 /* Poppins-SemiBold.ttf in Resources */,
 				72D34B962AB7D00F007D1F66 /* Poppins-Regular.ttf in Resources */,
@@ -215,7 +220,6 @@
 				72D34B9E2AB7D029007D1F66 /* uq-styles-dark.plist in Resources */,
 				72D2F30F2AAF506B006BF849 /* Main.storyboard in Resources */,
 				72D34B9F2AB7D029007D1F66 /* uq-styles.plist in Resources */,
-				72D34BA02AB7D029007D1F66 /* uq-text.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +256,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample-Objective-C/Pods-Sample-Objective-C-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Sample-Objective-C/Pods-Sample-Objective-C-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQE69LKY8A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sample-Objective-C/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -465,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQE69LKY8A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sample-Objective-C/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
